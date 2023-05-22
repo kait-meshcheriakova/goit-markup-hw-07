@@ -70,9 +70,9 @@ body{color:#434455;
     justify-content: center;
     font-family:var(--primery-text);
     font-style: normal;
-    font-weight: 500;
-    font-size: 20px;
-    line-height: 1.2;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.1;
     letter-spacing: 0.02em;
     color: #2E2F42;
     margin-bottom: 8px;
@@ -80,7 +80,7 @@ body{color:#434455;
 .content-text-divais{font-family: var(--primery-text);
 	font-size: 16px;
 	font-family: var(--primery-text);
-	font-weight: 400;
+	font-weight: 500;
 	font-style: normal;
 	line-height: 1.5;
 	letter-spacing: 0.02em;
@@ -196,10 +196,15 @@ body{color:#434455;
 mobile-menu-close-icon{fill: #2E2F42;}
  
 .mobile-container{position: relative;
-    width: 428px;
+    width: 100%;
     padding: 80px 40px 40px 40px;
     margin-left: auto;
     margin-right: auto;
+}
+@media only screen and (min-width: 428px) {
+   .mobile-container{width:428px;
+    
+  }
 }
 
 @media screen and (min-width: 768px) {
@@ -224,8 +229,13 @@ mobile-menu-close-icon{fill: #2E2F42;}
 .tel-contact-mobile{
     color:var(--color-iris);
     font-weight: 700;
-    font-size: 36px;
+    font-size: 25px;
     line-height: 40px;}
+@media only screen and (min-width: 428px) {
+   .tel-contact-mobile{font-size: 36px;
+    
+  }
+}
 .mail-contact-mobile{
     font-family:var(--primery-text);
     font-style: normal;
@@ -238,9 +248,13 @@ mobile-menu-close-icon{fill: #2E2F42;}
 .social-list-mobile{
     margin-top: 48px;
     display: flex;
-    gap: 56px;}
+    gap: 36px;}
 
-
+@media only screen and (min-width: 428px) {
+   .social-list-mobile{gap: 56px;
+    
+  }
+}
 @media screen and (max-width: 768px) {
     .menu-contact{
     display: none;}
@@ -459,17 +473,25 @@ mobile-menu-close-icon{fill: #2E2F42;}
     clip: rect(0 0 0 0);
     overflow: hidden;
   }
-@media screen and (max-width: 1158px){
-    .content-name-divais{font-weight: 700;
-        font-size: 36px;
-        line-height: 1.11;
+@media screen and (min-width: 1158px){
+    .content-name-divais{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 1.2;
+
     }
     .content-text-divais{font-style: normal;
-        font-weight: 500;
-        font-size: 1.5;
-        line-height: 24px;}
-    .pictures-feture{display: none;}
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 1.5;}
 }
+@media only screen and (max-width: 1158px) {
+   .pictures-feture{display: none;
+    
+  }
+}   
+
+
 .feature-menu{
     display: flex;
     flex-wrap: wrap;
@@ -572,7 +594,7 @@ fill:var(--color-studio-footer);
 @media screen and (min-width: 1158px){
     .employees{ column-gap: 24px;
     flex-wrap: nowrap;}
-    .employees .card:not(:last-child){margin-right: 24px;}
+    
 }
 
 /* ======== FINISH SECTION  3 Our Team ======== */
@@ -593,7 +615,7 @@ fill:var(--color-studio-footer);
 .custumer-list{display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 24px;
+    gap: 16px;
     row-gap: 72px;
 }
 .custumer-list-link{transition: border-color 250ms cubic-bezier(0.4, 0, 0.2, 1),
@@ -604,19 +626,27 @@ fill:var(--color-studio-footer);
     color: #8E8F99;
     border: 1px solid var(--color-light-slate);
     border-radius: 4px;
-    width: 168px;
+    width: 190px;
     height: 88px;
     justify-content: center;
 
 }
+@media only screen and (min-width: 768px) {
+   .custumer-list-link{width: 168px;}
+   .custumer-list{gap: 24px;}
+}
 .custumer-list-icon{ transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
     justify-content: center;
     fill: currentColor;
-    width: 104px;
+    width: 110px;
     height: 56px;
     text-align: center;
 }
-
+@media only screen and (min-width: 768px) {
+  .custumer-list-icon {width: 104px;
+    
+  }
+}
 .custumer-list-link:hover,
 .custumer-list-link:focus{color: #404bbf;
     border-color: #404BBF;}
@@ -835,7 +865,7 @@ fill:var(--color-studio-footer);
 .foter-social-list-link:hover .foter-social-list-icon,
 .foter-social-list-link:focus .foter-social-list-icon{fill: var(--color-cornflower);}
 .footer-form{
-    width: 398px;
+    width: 100%;
 } 
 .footer-input{display: flex;
     justify-content: center;
@@ -844,13 +874,19 @@ fill:var(--color-studio-footer);
     padding-left:16px;
     padding-top: 8px;
     padding-bottom: 8px;
-    width: 398px;
+    width: 100%;
     height: 40px;
+    background-color: #2E2F42;
     border: 1px solid #FFFFFF;
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
     border-radius: 4px;
     margin-bottom: 8px;
     
+}
+@media only screen and (min-width: 428px) {
+   .footer-input{width: 398px;
+    
+  }
 }
 .footer-input:focus{border-color:#31d0aa;}
 
@@ -883,6 +919,7 @@ fill:var(--color-studio-footer);
 @media screen and (min-width: 768px){
     .footer-btn{
         margin-left: 24px;}
+ 
 }
 .footer-btn:hover,
 .footer-btn:focus{background-color:var(--color-green);}
@@ -946,11 +983,16 @@ fill:var(--color-studio-footer);
     top: 50%;
     left:50%;
     transform: translate(-50%, -50%) scale(1); 
-    width: 392px;
+    width: 100%;
     height: 584px;
     background: #FCFCFC;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 2px 1px rgba(0, 0, 0, 0.2);
     border-radius: 4px;
+}
+@media only screen and (min-width: 428px) and (max-width: 767px) {
+   .modal{width:392px
+    
+  }
 }
 @media only screen and (min-width: 768px) {
    .modal{
@@ -1014,7 +1056,7 @@ fill:var(--color-studio-footer);
     flex-direction: column;
 
 }
-.form-title{width: 360px;
+.form-title{
     padding-top: 48px;
     margin-bottom: 16px;
     margin-left: auto;
@@ -1066,7 +1108,7 @@ fill:var(--color-studio-footer);
 .coment-form{display: flex;
     margin-bottom: 16px;
     box-sizing: border-box;
-    width: 360px;
+    width: 100%;
     padding: 8px 16px;
     min-height: 120px;   
     border: 1px solid rgba(46, 47, 66, 0.4);
@@ -1091,7 +1133,7 @@ fill:var(--color-studio-footer);
     align-items: center;
     padding: 0;
     margin-bottom: 24px;
-    width: 360px;
+    
     height: 16px;
     gap: 8px;
     cursor: pointer;
@@ -1168,4 +1210,8 @@ fill:var(--color-studio-footer);
     background: #404BBF;
     outline: none;}
 
- 
+@media only screen and (min-width: 428px) {
+   br{display: none;
+    
+  }
+}
